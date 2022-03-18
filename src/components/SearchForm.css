@@ -1,0 +1,26 @@
+.SearchForm{
+    margin-left: 100px;
+    margin-right: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+.content{
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+.label{
+    font-size: large;
+    margin: 15px 0 15px;
+} 
+
+.form{
+    
+    margin: 15px 0 15px;
+} 
+
+.button{
+    
+    margin: 20px 0 15px;
+} 
