@@ -13,7 +13,7 @@ export const Result = ({gif}:GifProp) =>{
             <div className="storage">
                 <h3>{gif.title}</h3>
                 <img src={gif.images.fixed_height.url} alt="GIF"/>
-                <p> <a href={gif.url}> <Image />Link to Image</a>  </p>
+                <p> <a href={gif.url}> <Image /> Link to Image</a>  </p>
                 
             </div>
 

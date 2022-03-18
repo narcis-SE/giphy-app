@@ -1,8 +1,9 @@
 .container{
     display: flex;
     justify-content: center;
+    background-color: #F3DCD4;
 }
 
-h1{
+.ResultsList h1{
     text-align: center;
 }

@@ -1,12 +1,12 @@
 .Header{
-    text-align: center;
+    text-align: left;
 }
 
 .Header p{
-    color: red;
+    color: gray;
 }
 
 .Header{
-    background-color:rgba(8, 8, 8, 0.472);
-    border: 1px solid black;
+    background-color: #C2C2B4;
+    border: 1px solid transparent;
 }

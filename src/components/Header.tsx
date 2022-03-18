@@ -3,7 +3,7 @@ import './Header.css'
 export const Header = () => {
     return(
         <div className='Header'>
-            <h1>GIF App</h1>
+            <h4>GIF App</h4>
             <p>Powered by <span className="giphy">GIPHY</span></p>
         </div>
     )

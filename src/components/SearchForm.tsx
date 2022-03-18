@@ -22,7 +22,7 @@ export const SearchForm = ({onSubmit}:SearchProp) =>{
             <div className="content">
                 <Form>
                     <div className="label">
-                    <Form.Label size="lg">Search for Giphy</Form.Label>
+                    <Form.Label size="lg">Search for a Gif</Form.Label>
                     </div>
                    <div className="form">
                    <Form.Control type="text" placeholder="Enter Search Term" name="search" onChange={(e)=>setSearchTerm(e.target.value)}></Form.Control>
@@ -30,6 +30,7 @@ export const SearchForm = ({onSubmit}:SearchProp) =>{
                     <div className="button">
                     <Button variant="primary" type="submit">Search</Button>
                     </div>
+                    <Form.Text className="text-muted"> Showing Results for "{searchTerm}"</Form.Text>
                     
                 </Form>
             </div>

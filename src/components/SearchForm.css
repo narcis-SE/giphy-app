@@ -1,8 +1,11 @@
 .SearchForm{
-    margin-left: 100px;
-    margin-right: 100px;
+
    display: flex;
    justify-content: center;
+   background-color: #ECC9C7;
+   margin-bottom: 10px;
+   border: 1px solid black;
+   border-radius: 5px
 }
 
 .content{
@@ -12,6 +15,7 @@
 
 .label{
     font-size: large;
+    font-weight: bold;
     margin: 15px 0 15px;
 } 
 
