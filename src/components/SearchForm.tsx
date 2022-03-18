@@ -10,6 +10,7 @@ interface SearchProp{
 
 export const SearchForm = ({onSubmit}:SearchProp) =>{
     const [searchTerm, setSearchTerm] = useState<string>("");
+    const [searchDisplay, setSearchDisplay] = useState<boolean>(true)
 
     function handleSearchSubmit(event:FormEvent){
         event.preventDefault();
@@ -28,9 +29,12 @@ export const SearchForm = ({onSubmit}:SearchProp) =>{
                    <Form.Control type="text" placeholder="Enter Search Term" name="search" onChange={(e)=>setSearchTerm(e.target.value)}></Form.Control>
                    </div>
                     <div className="button">
-                    <Button variant="primary" type="submit">Search</Button>
+                    <Button variant="primary" type="submit" onClick={() => setSearchDisplay(false)}>Search</Button>
                     </div>
-                    <Form.Text className="text-muted"> Showing Results for "{searchTerm}"</Form.Text>
+                    {
+                        searchDisplay ? <div> </div> : <div><Form.Text className="text-muted"> Showing Results for "{searchTerm}"</Form.Text> </div>
+                    }
+                    
                     
                 </Form>
             </div>
