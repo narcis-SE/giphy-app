@@ -20,11 +20,11 @@ export const ResultsList = ({gifs}: Props)=>{
             <div className="container">
                 <div className="resultsList">
                     {
-                        condition ? <div className="resultsList">{gifs.slice(0,3).map((gif,i) => <Result key={i} gif={gif}/>)} </div> : <div className="resultsList">{gifs.map((gif,i) => <Result key={i} gif={gif}/>)} </div>
+                        condition ? <div className="resultsList">{gifs.slice(0,3).map((gif,i) => <Result key={i} gif={gif}/>)}  <Button onClick={() => setCondition(false)}> Display All Results</Button></div> : <div className="resultsList">{gifs.map((gif,i) => <Result key={i} gif={gif}/>)} </div>
                     }
                     
                     {/* {gifs.slice(0,3).map((gif,i) => <Result key={i} gif={gif}/>)} */}
-                        <Button onClick={() => setCondition(false)}> Display All Results</Button>
+                        
                 </div>
             </div>
 
